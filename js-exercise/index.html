@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./js/java.js"></script>
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+
+    <title>Hello, world!</title>
   </head>
-  <body onload="message('LOAD')" onresize="message('RESIZE')">
-    <p onclick="message('CLICK')">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </p>
-    <p id="output"></p>
+  <body>
+    <script>
+      function welcomeMsg(msg) {
+        alert(msg);
+      }
+      var x = "Hello";
+      welcomeMsg(x);
+      x = "goodbye";
+      welcomeMsg(x);
+    </script>
   </body>
 </html>

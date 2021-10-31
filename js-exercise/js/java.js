@@ -1,3 +1,8 @@
-function message(msg){
-    document.getElementById('output').innerHTML=msg+" event";
+function closeMe(){
+    x=document.getElementById("change");
+    x.className="closed";
+}
+function openMe(){
+    x=document.getElementById("change");
+    x.className="openMe";
 }
