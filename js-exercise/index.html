@@ -8,16 +8,26 @@
     <!-- Bootstrap CSS -->
 
     <title>Hello, world!</title>
+    <script>
+      function writebtn1() {
+        document.getElementById("demo").innerHTML = "Clicked first button";
+      }
+      function writebtn2() {
+        document.getElementById("demo").innerHTML = "Clicked second button";
+      }
+    </script>
   </head>
   <body>
-    <script>
-      function welcomeMsg(msg) {
-        alert(msg);
-      }
-      var x = "Hello";
-      welcomeMsg(x);
-      x = "goodbye";
-      welcomeMsg(x);
-    </script>
+    <button onclick="writebtn1()">First</button>
+    <button onclick="writebtn2()">second</button>
+    <p id="demo"></p>
   </body>
 </html>
+<!-- <script>
+      function welcomeMsg(msg) {
+        alert(msg);
+        var name = prompt("Your name");
+        return name;
+      }
+      var firstname = welcomeMsg("Hi");
+      alert("welcome " + firstname); -->
