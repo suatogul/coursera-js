@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <!-- Bootstrap CSS -->
-
-    <title>Hello, world!</title>
+    <script src="./js/gallery.js"></script>
     <script>
-      function writebtn1() {
-        document.getElementById("demo").innerHTML = "Clicked first button";
-      }
-      function writebtn2() {
-        document.getElementById("demo").innerHTML = "Clicked second button";
+      function welcomeMsg(msg) {
+        alert(msg);
+        var name = prompt("What is your name?");
+        return name;
       }
     </script>
+    <title>Hello, world!</title>
   </head>
+  <!--  -------------------------------         ------------------Body starts -->
   <body>
-    <button onclick="writebtn1()">First</button>
-    <button onclick="writebtn2()">second</button>
-    <p id="demo"></p>
+    <p id="demo">dfdf</p>
+    <script>
+      document.getElementById("demo").innerHTML = "Welcome " + welcomeMsg("Hi");
+    </script>
   </body>
 </html>
 <!-- <script>
