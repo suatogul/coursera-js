@@ -19,8 +19,14 @@
   <!--  -------------------------------         ------------------Body starts -->
   <body>
     <p id="demo">dfdf</p>
+    <a href="http://www.umich.edu" onclick="return true"
+      >University of Michigan</a
+    ><br />
+    <a href="http://www.umich.edu" onclick="alert(this.href)"
+      >University of Michigan</a
+    ><br />
     <script>
-      document.getElementById("demo").innerHTML = "Welcome " + welcomeMsg("Hi");
+      // document.getElementById("demo").innerHTML = "Welcome " + welcomeMsg("Hi");
     </script>
   </body>
 </html>
