@@ -5,17 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/myscript.js"></script>
     <title>Autocomplete</title>
   </head>
   <body>
     <h1>JavaScript Homework</h1>
-    <p>
-      Add the JavaScript code needed to enable auto-complete on this form.
-      Whenever the checkbox is checked, the code should automatically copy the
-      values from Shipping Name and Shipping Zip into the Billing Name and
-      Billing Zip. If the checkbox is unchecked, the Billing Name and Billing
-      Zip should go blank.
-    </p>
 
     <form>
       <fieldset>
@@ -31,6 +25,7 @@
           required
         /><br />
       </fieldset>
+      <!-- Autocomplete part -->
       <input
         type="checkbox"
         id="same"
@@ -38,7 +33,6 @@
         onchange="billingFunction()"
       />
       <label for="same">Is the Billing Information the Same?</label>
-
       <fieldset>
         <legend>Billing Information</legend>
         <label for="billingName">Name:</label>
